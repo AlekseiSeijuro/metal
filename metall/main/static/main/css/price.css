@@ -1,0 +1,11 @@
+#price_table{
+    margin: 3%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+td {
+    width: 10%;
+    border: 3px solid #fff;
+}
+

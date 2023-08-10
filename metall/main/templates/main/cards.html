@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %} Платы {% endblock %}
+
+{% block head %} <h2 class="page_name">Закупаем платы!</h2> {% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'main/css/cards.css' %}">
+    <div class="content">
+        <br><br><br>
+        {% for elem in cards %}
+                <div1 class="cardblock"><img class="cardpng" src="{% static elem.1 %}"><br>{{ elem.0 }}</div1>
+        {% endfor %}
+
+    </div1>
+{% endblock %}

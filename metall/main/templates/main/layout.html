@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <meta name="description" content="Сайт приёма металлического лома в городе Орле.">
+    <meta name="Keywords" content="металлический лом, металл, металл в Орле, приём лома, вывоз лома, приём плат, металлолом">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="icon" href="{% static 'main/img/favicon.ico' %}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4eb223956a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<style>body{
+    background-image: url({% static 'main/img/background.jpg' %});
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}</style>
+    <div id="menu">
+        <img id="logo" src="{% static 'main/img/logo.png' %}" width="=1000" height="=1000" >
+        <span id="site_name">OrelMetal</span>
+        <h3>Меню</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i> Главная</li></a>
+            <a href="{% url 'prices' %}"><li><i class="fa-solid fa-dollar-sign"></i> Цены</li></a>
+            <a href="{% url 'form' %}"><li><i class="fa-solid fa-square-plus"></i> Оставить заявку</li></a>
+            <a href="{% url 'cards' %}"><li><i class="fa-solid fa-microchip"></i> Платы</li></a>
+            <a href="{% url 'contacts' %}"><li><i class="fa-solid fa-message"></i> Контакты</li></a>
+        </ul>
+        <a href="/admin"id="admin"><p id="adt">Администрация сайта</p></a>
+    </div>
+    {% block head %} {% endblock %}
+
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

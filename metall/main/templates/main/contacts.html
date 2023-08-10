@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %} Контакты {% endblock %}
+
+{% block head %} <h2 class="page_name">Наши контакты</h1> {% endblock %}
+
+{% block content %}
+  <link rel="stylesheet" href="{% static 'main/css/contacts.css' %}">
+  <div class="content">
+    <p1 class="text" id="contacts">
+      Номер телефона: +7 980 365-69-29<br>
+    </p1>
+  </div>
+{% endblock %}

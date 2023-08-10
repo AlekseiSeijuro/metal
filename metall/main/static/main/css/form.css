@@ -1,0 +1,17 @@
+.text{
+    color: #fff;
+    margin-right: 3%;
+    margin-top: 3%;
+
+}
+
+#forma{
+    width: 30%;
+    margin-left: 49%;
+    background: none;
+}
+
+#error{
+    font-size:20px;
+    color: #cf0000;
+}

@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %} Главная страница {% endblock %}
+
+{% block head %} <h2 class="page_name">Приём металла в Орле</h2> {% endblock %}
+
+{% block content %}
+    <div class="content">
+        <img id="metaljpg" src="{% static 'main/img/onm.jpg' %}" >
+
+        <p class="description">Приём металлолома ведётся на <a id="addr" target="_blank"  href="https://www.google.com/maps/place/2-я+Курская+ул.,+4а,+Орёл,+Орловская+обл.,+302030/@52.9673007,36.0850418,18.04z/data=!4m6!3m5!1s0x41321a094f75914d:0xcb40591517639819!8m2!3d52.9673472!4d36.086094!16s%2Fg%2F11qh85_5pp?entry=ttu">улице 2-я Курская 4а</a>, возле рынка.</p><br>
+
+            <img id="adrpng" src="{% static 'main/img/addr.png' %}"><br>
+        <p class="description">
+            Вы можете ознакомиться с ценами на соответствующей странице сайта.<br><br>
+            Также мы предоставляем услуги по вывозу металла. Для этого вы можете оставить заявку на сайте или связаться с нами по телефону, указанному на вкладке «Контакты».<br><br>
+            Помимо приёма лома, ведётся приём электронного лома. Подробнее на вкладке «Платы».
+        </p>
+
+
+    </div>
+{% endblock %}

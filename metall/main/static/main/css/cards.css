@@ -1,0 +1,11 @@
+.cardpng{
+    width: 50%;
+}
+
+.cardblock{
+    width: 25%;
+    height: 25vh;
+    float: left;
+    text-align: center;
+    color: #fff;
+}

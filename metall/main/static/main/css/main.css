@@ -1,0 +1,120 @@
+
+
+#logo{
+    width: 90%;
+}
+
+#menu{
+    background: #121212;
+    float: left;
+    width: 20%;
+    height: 100vh;
+    padding: 5%;
+    color: white;
+    border-right: 5px solid #202020;
+    position: fixed;
+}
+
+#menu ul{
+    list-style-type: none;
+    margin-left: -22%;
+}
+
+#menu ul li, #menu ul a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 8%;
+    transition: all .35s;
+}
+
+#menu ul li:hover, #menu ul a:hover{
+    transform: scale(1.05);
+    color: #941515;
+}
+
+#admin{
+    margin-top: 50%;
+    display: block;
+    text-decoration: none;
+    background-color: #941515;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+#admin:hover{
+    background-color: #831313;
+}
+
+#adt{
+    margin:10%;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+.page_name{
+    float: left;
+    width: 80%;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 20%;
+    color: #fff;
+}
+
+.content{
+    float: left;
+    margin-left: 22%;
+    margin-top: 3%;
+    width: 75%;
+    background-color: #121212;
+    border-radius: 5px;
+}
+
+
+#metaljpg{
+    width: 100%;
+}
+
+.description{
+    margin-top: 3%;
+    color: white;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+#addr{
+    color: #941515;
+    text-decoration: none;
+}
+
+#addr:hover{
+    color: #831313;
+    text-decoration: underline;
+}
+
+#adrpng{
+    width: 100%;
+}
+
+
+#price_table{
+    color: white;
+}
+
+#consc{
+    background: none;
+}
+
+#success{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+#contacts{
+    text-align: center;
+    margin-left: 0%;
+}

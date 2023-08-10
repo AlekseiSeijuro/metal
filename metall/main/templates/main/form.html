@@ -1,0 +1,30 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %} Заявка {% endblock %}
+
+{% block head %} <h2 class="page_name">Оформите заявку</h2> {% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'main/css/form.css' %}">
+<div class="content" id="forma">
+    <p class="text">Здесь вы можете оставить заявку на вывоз металла.</p>
+    <form method="post" onsubmit="return SubCheck()">
+        {% csrf_token %}
+        <label class="text">Как вас зовут?</label><input type="text" name="name" id="name" placeholder="Введите имя"><br>
+        <label class="text">Ваш номер телефона?</label><input type="tel" name="phone" id="phone" placeholder="Введите номер телефона"> <br>
+        <input type="checkbox" onclick="clicked(0)" name="checks[]" value="0" id="med"> <label class="text" for="med">Медь</label> <input id="0" class="met_number" name="met_0_num" disabled type="number" placeholder="Вес в кг"><br>
+        <input type="checkbox" onclick="clicked(1)" name="checks[]" value="1" id="al"> <label class="text" for="al">Алюминий</label> <input id="1" class="met_number" name="met_1_num" disabled type="number" placeholder="Вес в кг"><br>
+        <input type="checkbox" onclick="clicked(2)" name="checks[]" value="2" id="lat"> <label class="text" for="lat">Латунь</label> <input id="2" class="met_number" name="met_2_num" disabled type="number" placeholder="Вес в кг"><br>
+        <input type="checkbox" onclick="clicked(3)" name="checks[]" value="3" id="ol"> <label class="text" for="ol">Олово</label> <input id="3" class="met_number" name="met_3_num" disabled type="number" placeholder="Вес в кг"><br>
+        <input type="checkbox" onclick="clicked(4)" name="checks[]" value="4" id="nik"> <label class="text" for="nik">Никель</label> <input id="4" class="met_number" name="met_4_num" disabled type="number" placeholder="Вес в кг"><br>
+        <input type="checkbox" onclick="clicked(5)" name="checks[]" value="5" id="zin"> <label class="text" for="zin">Цинк</label> <input id="5" class="met_number" name="met_5_num" disabled type="number" placeholder="Вес в кг"><br>
+        <input type="checkbox" onclick="clicked(6)" name="checks[]" value="6" id="st"> <label class="text" for="st">Сталь</label> <input id="6" class="met_number" name="met_6_num" disabled type="number" placeholder="Вес в кг"><br>
+        <p class="text" id="error"></p>
+        <button type="submit">Отправить</button>
+    </form>
+
+</div>
+<script src="{% static 'main/js/main.js' %}"></script>
+{% endblock %}
